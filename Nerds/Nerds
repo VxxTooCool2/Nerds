@@ -1,0 +1,40 @@
+RAYX = {
+	953043143,
+	953043143,
+}
+
+CoolKids = {
+	976033548,
+}
+
+--\\ Don't mess with anything below this
+function RAYXNAMES()
+	for _,Player in pairs(game:GetService('Players'):GetChildren()) do
+		if table.find(RAYX, Player.UserId) then
+			if Player.Character then
+				if Player.Character.Parent.Name == 'Players' then
+					Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. Player.DisplayName)
+				end
+			end
+		elseif
+
+			table.find(CoolKids, Player.UserId) then
+			if Player.Character then
+				if Player.Character.Parent.Name == 'Players' then
+					Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. Player.DisplayName)
+				end
+			end
+
+			if
+				Player.Character then
+				if Player.Character.Parent.Name == 'Players' then
+					if not Player.Character.UpperTorso:FindFirstChild('OriginalSize') then
+						Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👻]' .. Player.DisplayName)
+					end
+				end
+			end
+		end
+	end
+end
+local success,err = pcall(RAYXNAMES)
+return RAYXNAMES
